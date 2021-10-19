@@ -1,0 +1,42 @@
+.conteiner{
+    margin: auto;
+    width:40%;
+    padding: 10px;
+}
+.Correos{
+   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.Correos tr:nth-child(even){background-color: #f2f2f2;}
+
+    
+
+.Correos th {
+   padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #01559D;
+    color: white;
+    
+}
+
+.input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.button{
+      background-color:#01559D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

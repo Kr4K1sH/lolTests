@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+    <h:head>
+        <title>Vehiculo</title>
+        <link rel="stylesheet" type="text/css" href="Vehiculo.css"/>
+    </h:head>
+
+    <h:body>
+        
+        <div class="conteiner">
+
+            <h:form>   
+                <table class="BuscarAuto">
+                    <tr>
+                        <th>
+                            <h2><span class="rojo">▀ </span><span class="azul">▀ </span><span class="verde">▀ </span>Búsqueda de Autos UTN – Costa Rica</h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Marca:  <h:selectOneMenu value="#{beanVehiculo.marca}">
+                                <f:selectItem itemValue="Noimporta" itemLabel="No importa"></f:selectItem>
+                                
+                                <f:selectItem itemValue="Renault" itemLabel="Renault"></f:selectItem>
+                                <f:selectItem itemValue="RollsRoyce" itemLabel="Rolls Royce"></f:selectItem>
+                                <f:selectItem itemValue="Rover" itemLabel="Rover"></f:selectItem>
+                                <f:selectItem itemValue="Saab" itemLabel="Saab"></f:selectItem>
+                                <f:selectItem itemValue="Samsung" itemLabel="Samsung"></f:selectItem>
+                                <f:selectItem itemValue="Saturn" itemLabel="Saturn"></f:selectItem>
+                                <f:selectItem itemValue="Scania" itemLabel="Scania"></f:selectItem>
+                                <f:selectItem itemValue="Scion" itemLabel="Scion"></f:selectItem>
+                                <f:selectItem itemValue="Seat" itemLabel="Seat"></f:selectItem>
+                                <f:selectItem itemValue="Skoda" itemLabel="Skoda"></f:selectItem>
+                                <f:selectItem itemValue="Smart" itemLabel="Smart"></f:selectItem>
+                                <f:selectItem itemValue="SsangYong" itemLabel="SsangYong"></f:selectItem>
+                                <f:selectItem itemValue="Subaru" itemLabel="Subaru"></f:selectItem>
+                                <f:selectItem itemValue="Suzuki" itemLabel="Suzuki"></f:selectItem>
+                                <f:selectItem itemValue="Tianma" itemLabel="Tianma"></f:selectItem>
+                                <f:selectItem itemValue="TigerTruck" itemLabel="Tiger Truck"></f:selectItem>
+                                <f:selectItem itemValue="Toyota" itemLabel="Toyota"></f:selectItem>
+                                <f:selectItem itemValue="Volkswagen" itemLabel="Volkswagen"></f:selectItem>
+                                <f:selectItem itemValue="Volvo" itemLabel="Volvo"></f:selectItem>
+                                <f:selectItem itemValue="Yugo" itemLabel="Yugo"></f:selectItem>
+                            </h:selectOneMenu>
+                        </td>   
+                    </tr>    
+                    <tr>
+                        <td>
+                            Modelo: <h:inputText value="#{beanVehiculo.modelo}"></h:inputText>
+                            <br></br>
+                            (ej:corolla, sentra, elantra, etc)
+                        </td>   
+                    </tr>     
+                    <tr>
+                        <td> Estilo: <h:selectOneMenu value="#{beanVehiculo.estilo}">
+                                <f:selectItem itemValue="Noimporta" itemLabel="No importa"></f:selectItem>
+                                <f:selectItem itemValue="Sedan" itemLabel="Sedan"></f:selectItem>
+                                <f:selectItem itemValue="StationWagon" itemLabel="Station Wagon"></f:selectItem>
+                                <f:selectItem itemValue="Hatchaback" itemLabel="Hatchaback"></f:selectItem>
+                                <f:selectItem itemValue="Pickup4x2" itemLabel="Pick up 4x2"></f:selectItem>
+                                <f:selectItem itemValue="Pickup4x4" itemLabel="Pick up 4x4"></f:selectItem>
+                                <f:selectItem itemValue="Panel" itemLabel="Panel"></f:selectItem>
+                                <f:selectItem itemValue="Microbus/Minvan" itemLabel="Microbus/Minivan"></f:selectItem>
+                                <f:selectItem itemValue="TodoTerreo4x2" itemLabel="Todo Terreno 4x2"></f:selectItem>
+                                <f:selectItem itemValue="TodoTerreo4x4" itemLabel="Todo Terreno 4x4"></f:selectItem>
+                                <f:selectItem itemValue="CasaRodante" itemLabel="Casa Rodante"></f:selectItem>
+                                <f:selectItem itemValue="Comercial1.0-3.5Ton." itemLabel="Comercial l.0-3.5 Ton."></f:selectItem>
+                                <f:selectItem itemValue="Comercial4.0-4.5Ton." itemLabel="Comercial 4.0-4.5 Ton."></f:selectItem>
+                                <f:selectItem itemValue="Comercial5.0-3.5Ton." itemLabel="Comercial 5.0-7.5 Ton."></f:selectItem>
+                                <f:selectItem itemValue="Comercial8.0-3.5Ton." itemLabel="Comercial 8.0-9.5 Ton."></f:selectItem>
+                                <f:selectItem itemValue="Comerciall0+Ton." itemLabel="Comercial 10."></f:selectItem>
+                            </h:selectOneMenu>  </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Combustible: <h:selectOneMenu value="#{beanVehiculo.combustible}">
+                                <f:selectItem itemValue="Noimporta" itemLabel="No importa"></f:selectItem>
+                                <f:selectItem itemValue="Regular" itemLabel="Regular"></f:selectItem>
+                                <f:selectItem itemValue="Diesel" itemLabel="Diesel"></f:selectItem>
+                            </h:selectOneMenu>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            Financiamiento: 
+                            <h:selectOneMenu value="#{beanVehiculo.financiamiento}">
+                                <f:selectItem itemValue="No importa" itemLabel="No importa"></f:selectItem>
+                                <f:selectItem itemValue="Solo con financimiento" itemLabel="Solo con financiamiento"></f:selectItem>
+                            </h:selectOneMenu>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Año entre: 
+                            <h:selectOneMenu value="1960">
+
+                                <f:selectItems value="#{beanVehiculo.llenarAnios()}" var="c" itemValue="#{c}" itemLabel="#{c}"></f:selectItems>	
+                            </h:selectOneMenu>
+                            y
+                            <h:selectOneMenu value="#{beanVehiculo.anio}">
+                                <f:selectItems value="#{beanVehiculo.llenarAnios()}" var="c" itemValue="#{c}" itemLabel="#{c}"></f:selectItems>                                 
+                            </h:selectOneMenu>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Precio entre:₡ <h:inputText value="#{beanVehiculo.precioIncial}"></h:inputText> y ₡<h:inputText value="#{beanVehiculo.precioFinal}"></h:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Ordenar por: <h:selectOneMenu>
+                                <f:selectItem itemValue="Precio" itemLabel="Precio"></f:selectItem> 
+                                <f:selectItem itemValue="Año" itemLabel="Año"></f:selectItem>
+                                <f:selectItem itemValue="Marca" itemLabel="Marca"></f:selectItem>
+                                <f:selectItem itemValue="Modelo" itemLabel="Modelo"></f:selectItem> 
+                            </h:selectOneMenu>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="radios">
+                            <input type="radio"  name="item" />Lista en formato clásico
+                            <br></br>
+                            <input type="radio"  name="item"/>Lista en formato grádfico
+                            <br></br>
+                            <h:commandButton value="Buscar" action="VehiculoResultado"></h:commandButton>
+                        </td>
+                    </tr>
+                </table>
+                <a href="index.xhtml">Regresar a la pagina anterior</a>
+            </h:form>
+
+        </div>
+    </h:body>
+</html>
+

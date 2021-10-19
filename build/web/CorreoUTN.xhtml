@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Correo Utn</title>
+        <link rel="stylesheet" type="text/css" href="Correo.css"/>
+    </h:head>
+    <h:body>
+        <div class="conteiner">
+        <h:form>
+            <h3>Herramienta de Correo UTN</h3>
+            Para:<h:inputText value="#{correoBean.para}" class="input"></h:inputText>
+            <br></br>
+            CC: <h:inputText value="#{correoBean.CC}" class="input"></h:inputText>
+            <br></br>
+            Mensaje: <br></br>
+            <h:inputTextarea value="#{correoBean.mensaje}" class="input"></h:inputTextarea>
+            <br></br>
+            <h:commandButton value="Enviar" action="CorreoResultado" class="button" ></h:commandButton>
+            <h:commandButton value="Cancelar" actionListener="#{correoBean.cancelar()}" class="button"></h:commandButton>
+            <br></br>
+            <a href="index.xhtml">Pagina principal</a> 
+        </h:form>
+        </div>
+        
+        
+    </h:body>
+</html>
+

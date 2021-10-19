@@ -1,0 +1,23 @@
+.conteiner{
+    margin: auto;
+    width:40%;
+    padding: 10px;
+}
+.indexTable{
+   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.indexTable tr:nth-child(even){background-color: #f2f2f2;}
+
+    
+
+.indexTable th {
+   padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #01559D;
+    color: white;
+    
+}
